@@ -1,15 +1,17 @@
+# This is a template file used to generate the brew formula.
+# https://github.com/hotaisle/homebrew-tap/blob/main/hotaisle.rb
 class HotaisleCli < Formula
   desc "Hotaisle CLI tool"
   homepage "https://github.com/hotaisle/hotaisle-cli"
-  version "v0.1.5"
+  version "v0.1.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hotaisle/hotaisle-cli/releases/download/vv0.1.5/hotaisle-cli-darwin-arm64.tar.gz"
-      sha256 "161e4f9d6102d7502f485cde80504d8547bc3d6c16210080d791caf1daace645"
+      url "https://github.com/hotaisle/hotaisle-cli/releases/download/v0.1.6/hotaisle-cli-v0.1.6-darwin-arm64.tar.gz"
+      sha256 "f8fa8d4a85dda2092678a3968acaeabe4497bd214ae7916bd468de25e1c2b522"
     else
-      url "https://github.com/hotaisle/hotaisle-cli/releases/download/vv0.1.5/hotaisle-cli-darwin-amd64.tar.gz"
-      sha256 "6cd53a0e77ca114c803addb9fa3fe1fe47ad123552693cd28c04d59a4f77a579"
+      url "https://github.com/hotaisle/hotaisle-cli/releases/download/v0.1.6/hotaisle-cli-v0.1.6-darwin-amd64.tar.gz"
+      sha256 "80c8a787511f0e3d90c9b76c57e31867223a02490d2dbd9d9ce1de7969c1e446"
     end
   end
 
@@ -22,6 +24,7 @@ class HotaisleCli < Formula
   end
 
   test do
-    system "/usr/local/bin/hotaisle", "--version"
+    system "#{bin}/hotaisle"
+    assert_match version.to_s, shell_output("#{bin}/hotaisle --version")
   end
 end
