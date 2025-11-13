@@ -1,7 +1,7 @@
 # This is a template file used to generate the brew formula.
 # https://github.com/hotaisle/homebrew-tap/blob/main/hotaisle.rb
-class HotaisleCli < Formula
-  desc "Hotaisle CLI tool"
+class Hotaisle < Formula
+  desc "Hot Aisle CLI tool"
   homepage "https://github.com/hotaisle/hotaisle-cli"
   version "v0.1.6"
 
