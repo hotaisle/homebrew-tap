@@ -1,18 +1,6 @@
-# Hotaisle Tap
+# Hot Aisle Tap
 
-## How do I install these formulae?
+## How do I install?
 
-`brew install hotaisle/tap/<formula>`
-
-Or `brew tap hotaisle/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "hotaisle/tap"
-brew "<formula>"
-```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+`brew tap hotaisle/tap`
+`brew install hotaisle-cli`
