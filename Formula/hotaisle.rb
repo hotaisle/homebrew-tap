@@ -17,9 +17,9 @@ class Hotaisle < Formula
 
   def install
     if Hardware::CPU.arm?
-      bin.install "hotaisle-cli-darwin-arm64" => "hotaisle"
+      bin.install "hotaisle-cli-v0.1.6-darwin-arm64" => "hotaisle"
     else
-      bin.install "hotaisle-cli-darwin-amd64" => "hotaisle"
+      bin.install "hotaisle-cli-v0.1.6-darwin-amd64" => "hotaisle"
     end
   end
 
