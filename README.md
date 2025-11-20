@@ -2,5 +2,4 @@
 
 ## How do I install?
 
-* `brew tap hotaisle/tap`
 * `brew install hotaisle/tap/hotaisle`
