@@ -3,23 +3,23 @@
 class Hotaisle < Formula
   desc "Hot Aisle CLI tool"
   homepage "https://github.com/hotaisle/hotaisle-cli"
-  version "v0.10.5"
+  version "v0.10.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hotaisle/hotaisle-cli/releases/download/v0.10.5/hotaisle-cli-v0.10.5-darwin-arm64.tar.gz"
-      sha256 "a3a2fab22df02e4ed1a59a65b73a341594101742133664f7aca115768d819310"
+      url "https://github.com/hotaisle/hotaisle-cli/releases/download/v0.10.6/hotaisle-cli-v0.10.6-darwin-arm64.tar.gz"
+      sha256 "0ca58df771539c305cf7cd30281c7cc0ad45204fd0f2590fdc79de5c08337ed7"
     else
-      url "https://github.com/hotaisle/hotaisle-cli/releases/download/v0.10.5/hotaisle-cli-v0.10.5-darwin-amd64.tar.gz"
-      sha256 "3b95fc8f8ce174ee52015ebbe3ed7a67c7112c045eac8743ebe1da56315eb17e"
+      url "https://github.com/hotaisle/hotaisle-cli/releases/download/v0.10.6/hotaisle-cli-v0.10.6-darwin-amd64.tar.gz"
+      sha256 "455e5200d33d7dd996e0a96fd3ca3696a0da44d59df68f147c0a181062dab388"
     end
   end
 
   def install
     if Hardware::CPU.arm?
-      bin.install "hotaisle-cli-v0.10.5-darwin-arm64" => "hotaisle"
+      bin.install "hotaisle-cli-v0.10.6-darwin-arm64" => "hotaisle"
     else
-      bin.install "hotaisle-cli-v0.10.5-darwin-amd64" => "hotaisle"
+      bin.install "hotaisle-cli-v0.10.6-darwin-amd64" => "hotaisle"
     end
   end
 
